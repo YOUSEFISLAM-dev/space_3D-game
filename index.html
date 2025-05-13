@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Adventure</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui-overlay">
+            <div id="mission-info" class="panel">
+                <h2>Mission Status</h2>
+                <p id="current-mission">Explore the unknown</p>
+                <p id="mission-objective">Find and explore new planets</p>
+            </div>
+            <div id="resources" class="panel">
+                <h2>Resources</h2>
+                <p>Fuel: <span id="fuel-level">100</span>%</p>
+                <p>Shield: <span id="shield-level">100</span>%</p>
+            </div>
+        </div>
+        <div id="loading-screen">
+            <h1>Space Adventure</h1>
+            <div class="loading-bar-container">
+                <div id="loading-bar"></div>
+            </div>
+            <p id="loading-text">Loading galaxy...</p>
+        </div>
+    </div>
+
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Game scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/procedural-generator.js"></script>
+    <script src="js/spaceship.js"></script>
+    <script src="js/planet.js"></script>
+    <script src="js/mission.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
